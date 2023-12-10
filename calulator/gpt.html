@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f4f4f4; /* Set a background color for the body */
+        }
+
+        header {
+            background-image: url("https://c4.wallpaperflare.com/wallpaper/694/838/505/abstract-design-technology-business-wallpaper-preview.jpg");
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            transition: background-color 0.3s;
+        }
+
+        header.scrolled {
+            background-color: rgba(0, 0, 0, 0.7); /* Change background color with transparency when scrolled */
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        nav {
+            position: fixed;
+            width: 100%;
+            top: 60px; /* Adjust top position based on the height of your header */
+            display: flex;
+            justify-content: center;
+            background-color: #444;
+            z-index: 1000;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            display: inline-block;
+        }
+
+        nav a:hover {
+            background-color: #b11e1e;
+        }
+
+        section {
+            padding: 120px 20px 20px; /* Add space to accommodate fixed header and navigation */
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+            display: inline-block;
+        }
+        footer a:hover {
+            background-color: #1e96b1;
+        }
+        
+        /* Style for the image modal */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.9);
+        }
+
+        .modal-content {
+            margin: 5% auto;
+            display: block;
+            width: 80%;
+            max-width: 700px;
+        }
+
+        .modal img {
+            width: 100%;
+            height: auto;
+            display: block;
+            margin: auto;
+        }
+
+        .caption {
+            color: #fff;
+            text-align: center;
+            margin: 10px 0;
+            display: block;
+        }
+
+        /* Style for closing the modal */
+        .close {
+            color: #fff;
+            position: absolute;
+            top: 15px;
+            right: 25px;
+            font-size: 30px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+    </style>
+    
+</head>
+
+<body>
+
+    <header>
+        <h1>Sulabh Website</h1>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="https://www.linkedin.com/in/sulabh-suman/overlay/about-this-profile/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3BqKRVhwXvSVaxr6JXmg1pwQ%3D%3D" target="_blank">LinkedIn</a>
+        <a href="tel:+7488764451" style="text-decoration: none; color: #fff;">Contact</a>
+    </nav>
+
+    <section>
+        <!-- Your main content goes here -->
+        <h2>Welcome to Sulabh Website!</h2>
+        <p>This is the main content of your website.</p>
+        <img src="https://scontent.fdbd5-1.fna.fbcdn.net/v/t39.30808-6/345234303_789487902790830_1602520655950091140_n.jpg?stp=dst-jpg_p843x403&_nc_cat=102&ccb=1-7&_nc_sid=5f2048&_nc_ohc=SU55Y43CG6QAX_LR4Xs&_nc_ht=scontent.fdbd5-1.fna&cb_e2o_trans=t&oh=00_AfBdO_wdi1v3xtmY5uQeilinqC0jUEu7_nL3NoiHiEcVBA&oe=655A930B">
+        <p>By-Sulabh Suman<br>From-Sasaram, Bihar</p>
+        <!-- Add more content as needed -->
+        
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div class="modal-content">
+                <img src="S:\my files\my pics\IMG_20220111_034809_217.jpg" alt="Description of the image">
+                <p class="caption">By-Sulabh Suman<br>From-Sasaram, Bihar</p>
+            </div>
+    </section>
+
+    <footer>
+        <a href="https://www.instagram.com/_sulabh_suman_/#" target="_blank">Instagram</a>
+        <a href="https://www.facebook.com/sulabh.suman.96" target="_blank">Facebook</a>
+        <a href="https://www.linkedin.com/in/sulabh-suman/overlay/about-this-profile/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3BqKRVhwXvSVaxr6JXmg1pwQ%3D%3D" target="_blank">LinkedIn</a>
+        <a href="tel:+7488764451" style="text-decoration: none; color: #fff;">Contact</a>
+
+    </footer>
+
+    <script>
+        // JavaScript to add scrolling effect to the header
+        window.onscroll = function () {
+            var header = document.querySelector('header');
+            if (window.scrollY > 0) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        };
+    </script>
+
+</body>
+
+</html>

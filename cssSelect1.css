@@ -1,0 +1,19 @@
+  /* desendent selector...parent k andar aata h child */
+main p {
+    color: red;
+}
+ /* child sel.. */
+ h1 > p {
+    color: blue;
+ }
+/* adjecent sibiling..selector */
+ section+p {
+    color: yellow;
+ }
+ [target="_blank"] {
+    color: pink;
+    text-decoration:  none;
+ }
+ [alt~="pw"] {
+    background-color: black;
+ }

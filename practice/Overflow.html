@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overflow and Z-index</title>
+       <style>
+ p{
+    height: 250px;
+    width: 250px;
+    border: 2px solid red;
+    overflow: auto;
+ }
+   .one{
+background-color: white;
+border: 2px solid red;
+height: 50px;
+width: 50px;                                                                                                                               
+position: absolute;
+top: 0px;
+z-index: -1;
+   }
+   .two{
+    background-color: yellow;
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    top: 0;
+    z-index: 2;
+   }
+       </style>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet repudiandae qui et inventore officiis molestiae voluptates tenetur natus dolores sapiente ipsa sint earum deleniti, libero ullam illum nostrum ipsum, doloremque temporibus illo amet! Ab neque repellat pariatur consequatur delectus, perferendis fugit magnam dignissimos animi sunt eaque doloribus, ex laborum veniam Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa animi similique modi repudiandae quibusdam reiciendis harum excepturi impedit placeat, </p>
+    <!-- Z-index -->
+      <div class="one"></div>
+      <div class="two"></div>
+</body>
+</html>
